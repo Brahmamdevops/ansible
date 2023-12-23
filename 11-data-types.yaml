@@ -1,8 +1,8 @@
 - name: datatypes
   hosts: localhost
   vars:
-    name: brahmam #ist key value
-    skills: # skilss us a list type
+    NAME: brahmam #ist key value
+    SKILLS: # skilss us a list type
     - devops
     - aws
     - ansible
@@ -14,11 +14,11 @@
   tasks:
     - name: check key value
       ansible.builtin.debug:
-        msg: "hi i am {{name}}"
+        msg: "hi i am {{NAME}}"
   tasks:
   - name: check list
     ansible.builtin.debug:
-      msg: "my skillset {{skills}}"
+      msg: "my skillset {{SKILLS}}"
   tasks:
   - name: check map
     ansible.builtin.debug:
