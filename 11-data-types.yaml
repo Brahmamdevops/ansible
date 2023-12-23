@@ -15,11 +15,9 @@
   - name: check key value
     ansible.builtin.debug:
       msg: "hi i am {{NAME}}"
-  tasks:
   - name: check list
     ansible.builtin.debug:
       msg: "my skillset {{SKILLS}}"
-  tasks:
   - name: check map
     ansible.builtin.debug:
       msg: "my experince {{EXPERIENCE}}"
