@@ -3,3 +3,8 @@
 
 [localhost]
 localhost
+
+[details:vars]
+COURSE="devops from inventory"
+TRAINER="siva"
+DURATION="110hrs"
