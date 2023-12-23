@@ -7,10 +7,10 @@
     - aws
     - ansible
     - kubarnates
-      EXPERIENCE: #its map
-        devops: 3
-        aws: 3
-        docker: 1
+    EXPERIENCE: #its map
+      devops: 3
+      aws: 3
+      docker: 1
   tasks:
     - name: check key value
       ansible.builtin.debug:
