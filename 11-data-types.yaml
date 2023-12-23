@@ -12,9 +12,9 @@
       aws: 3
       docker: 1
   tasks:
-    - name: check key value
-      ansible.builtin.debug:
-        msg: "hi i am {{NAME}}"
+  - name: check key value
+    ansible.builtin.debug:
+      msg: "hi i am {{NAME}}"
   tasks:
   - name: check list
     ansible.builtin.debug:
