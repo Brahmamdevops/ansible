@@ -1,7 +1,7 @@
 - name: variable from promPt
   hosts: localhost
   vars_prompt:
-  - name: USERNAME
+  - username: USERNAME
     prompt: please enter your username
     private: false # user can see what they are entering
   - password: PASSWORD
