@@ -1,14 +1,14 @@
 - name: varibles from play
   hosts: localhost
   vars:
-    subject: "devops"
-    teacher: "sivakumar"
-    period: "110hrs"
+    COURSE: "devops"
+    TRAINER: "sivakumar"
+    DURATION: "110hrs"
   tasks:
   - name: varibles from task
     vars:
-      subject: "devops with aws"
-      teacher: "sivakumar"
-      period: "110hrs" 
+      COURSE: "devops with aws"
+      TRAINER: "sivakumar"
+      DURATION: "110hrs" 
     ansible.builtin.debug:
-      msg: "this is {{subject}} trained by {{teacher}} and duration is {{period}}
+      msg: "this is {{COURSE}} trained by {{TRAINER}} and duration is {{DURATION}}"
