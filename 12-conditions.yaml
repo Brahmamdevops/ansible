@@ -1,0 +1,10 @@
+- name: conditions
+  hosts: localhost
+  tasks:
+  - name: check conditions
+    ansible.builtin.command: Id roboshop
+    register: user # id of status stored in user. it is a varible
+
+  - name: print user
+    ansible.builtin.debug:
+      msg: "usr is {{user}}"
