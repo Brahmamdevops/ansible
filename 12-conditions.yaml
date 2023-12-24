@@ -1,5 +1,6 @@
 - name: conditions
   hosts: localhost
+  become: yes # getting root access
   tasks:
   - name: check conditions
     ansible.builtin.command: Id roboshop
