@@ -1,5 +1,5 @@
 - name: loops
-  hosts: loclhost
+  hosts: localhost
   tasks:
   - name: checking loops
     ansible.builtin.debug:
