@@ -20,7 +20,4 @@
       name: roboshop
     when: user.rc != 0
 
-    - name: print user
-    ansible.builtin.debug:
-      msg: "user is {{user}}"
   
