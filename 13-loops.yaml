@@ -1,0 +1,10 @@
+- name: loops
+  hosts: loclhost
+  tasks:
+  - name: checking loops
+    ansible.builtin.debug:
+      msg: "name {{item}}"
+  loop:
+  - brahmam
+  - vihaan
+  - virat

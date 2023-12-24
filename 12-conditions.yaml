@@ -3,7 +3,7 @@
   become: yes # getting root access
   tasks:
   - name: check conditions
-    ansible.builtin.command: Id roboshop
+    ansible.builtin.command: id roboshop
     register: user # id of status stored in user. it is a varible
     ignore_errors: true # ansible will not exist even if it got error
 
