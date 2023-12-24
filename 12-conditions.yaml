@@ -1,6 +1,6 @@
 - name: conditions
   hosts: localhost
-  # become: yes # getting root access
+  become: yes # getting root access
   tasks:
   - name: check conditions
     ansible.builtin.command: Id roboshop
@@ -19,3 +19,8 @@
     ansible.builtin.user:
       name: roboshop
     when: user.rc != 0
+
+    - name: print user
+    ansible.builtin.debug:
+      msg: "user is {{user}}"
+  
