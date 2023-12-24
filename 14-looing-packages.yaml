@@ -2,11 +2,11 @@
   hosts: localhost
   become: yes
   tasks:
-    - name: looping packages
-      ansible.builtin.package:
-        name: {{item}}
-        state: present
-      loop:
-      - git
-      - mysql
+  - name: looping packages
+    ansible.builtin.package:
+      name: "{{item}}"
+      state: present
+    loop:
+    - git
+    - mysql
 
