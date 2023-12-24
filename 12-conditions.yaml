@@ -4,6 +4,7 @@
   - name: check conditions
     ansible.builtin.command: Id roboshop
     register: user # id of status stored in user. it is a varible
+    ignore_error: true # ansible will not exist even if it got error
 
   - name: print user
     ansible.builtin.debug:
