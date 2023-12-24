@@ -15,7 +15,7 @@
     ansible.builtin.debug:
       msg: "user status {{user.rc}}" # rc means return code or exist status
 
-  - name: create user
-    ansible.builtin.user:
-      name: roboshop
-    when: user.rc != 0
+  # - name: create user
+  #   ansible.builtin.user:
+  #     name: roboshop
+  #   when: user.rc != 0
